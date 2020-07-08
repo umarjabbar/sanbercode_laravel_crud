@@ -9,6 +9,6 @@ class Answer extends Model
     protected $fillable = ['jawaban', 'question_id'];
     public function question()
     {
-        return $this->belongTo(Question::class);
+        return $this->belongTo('App\Question');
     }
 }

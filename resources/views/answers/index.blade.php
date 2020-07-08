@@ -33,8 +33,8 @@
   </ul>
   </div>
   <div class="card-footer text-right">
-    <form method="POST" action="/jawaban/{{$question->id}}">
-      @csrf
+  <form method="POST" action="/jawaban/{{$question->id}}">
+    @csrf
       <div class="form-group">
         <textarea class="form-control @error('jawaban') is-invalid @enderror" id="isi" placeholder="Tulis pertanyaan disini" name="jawaban"></textarea>
         @error('jawaban')<div class="invalid-feedback">{{ $message }}</div>@enderror
